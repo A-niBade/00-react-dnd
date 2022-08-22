@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <img src="../../../public/navbar-icon.png" className="navbar-icon" />
+        <Link className="navbar-brand" to="/home">
+          <img src="/navbar-icon.png" className="navbar-icon" />
         </Link>
 
         <button
@@ -21,17 +21,15 @@ export const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">
-              Rules
-            </a>
-            <a className="nav-link" href="#">
-              Player
-            </a>
-            <a className="nav-link" href="#">
-              Dungeon Master
-            </a>
-          </div>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <NavLink className="nav-item nav-link" to="/classes">
+              <h5>Classes</h5>
+            </NavLink>
+
+            <NavLink className="nav-item nav-link" to="/spells">
+              <h5>Spells</h5>
+            </NavLink>
+          </ul>
         </div>
       </div>
     </nav>
