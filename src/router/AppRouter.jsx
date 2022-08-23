@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { ClassPage } from "../classes/components/ClassPage";
+import { ClassPage } from "../classes/pages/ClassPage";
 import { HomePage } from "../home/pages/HomePage";
 import { SpellsPage } from "../spells/components/SpellsPage";
 import { Navbar } from "../ui/components/Navbar";
